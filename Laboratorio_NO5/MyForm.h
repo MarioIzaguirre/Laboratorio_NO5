@@ -217,6 +217,7 @@ namespace LaboratorioNO5 {
 				pokedex[lineaActual].pokemon = msclr::interop::marshal_as<std::string>(nombre);
 				pokedex[lineaActual].generacion = gen;
 				lineaActual++;
+				textBox1->Text = lineaActual; 
 			}
 			archivo.close();
 		}
